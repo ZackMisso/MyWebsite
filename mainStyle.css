@@ -1,7 +1,7 @@
 body {
 	background: #000000; /* 196dff */
 	text-align: center;
-	color: #005500;
+	/* color: #005500; */
 }
 
 #main{
@@ -9,21 +9,40 @@ body {
 	height: 600px;
 	background: #464646; /* ffab19 */
 	margin: 25px auto;
-	color: #00aa00;
+	/* color: #00aa00; */
 	border: solid 2px #ff3819;
 	padding: 10px;
 }
 
 h1 {
 	text-align: center;
+	color: #00aa00;
 	font-family: "Times New Roman";
 	/* background: #ff3819; */
 }
 
-hr {
+h2 {
+	text-align: center;
+	font-family: "Times New Roman";
+	color: #cccccc;
+}
+
+ul {
+	text-align: left;
+	font-family: "Times New Roman";
+	color: #cccccc;
+}
+
+h3 {
+	text-align: center;
+	font-family: "Times New Roman";
+	color: #cccccc;
+}
+
+/*hr {
 	height: 2px;
 	color: #ff3819;
-}
+}*/
 
 p {
 	font-family: "Calibri";
