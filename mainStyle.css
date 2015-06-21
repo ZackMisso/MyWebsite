@@ -6,29 +6,11 @@ body {
 
 #main{
 	width: 600px;
-	height: 600px;
+	min-height: 600px;
 	background: #464646; /* ffab19 */
 	margin: 25px auto;
 	/* color: #00aa00; */
-	border: solid 2px #ff3819;
-	padding: 10px;
-}
-
-#mainProjects{
-	width: 600px;
-	height: 720px;
-	background: #464646; /* ffab19 */
-	margin: 25px auto;
-	/* color: #00aa00; */
-	border: solid 2px #ff3819;
-	padding: 10px;
-}
-
-#mainBio{
-	width: 600px;
-	height: 1525px;
-	background: #464646;
-	margin: 25px auto;
+	/*overflow: auto;*/
 	border: solid 2px #ff3819;
 	padding: 10px;
 }
@@ -78,7 +60,7 @@ a:link {
 
 /* visited link */
 a:visited {
-	color: #000000;
+	color: #6B6B00;
 }
 
 /* mouse over link */
