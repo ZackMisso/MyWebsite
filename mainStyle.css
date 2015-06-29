@@ -9,8 +9,6 @@ body {
 	min-height: 600px;
 	background: #464646; /* ffab19 */
 	margin: 25px auto;
-	/* color: #00aa00; */
-	/*overflow: auto;*/
 	border: solid 2px #ff3819;
 	padding: 10px;
 }
