@@ -4,6 +4,257 @@
 	<link href="mainStyle.css" type="text/css" rel="stylesheet">
 </head>
 <body>
+	<div id="header">
+		<!-- Going to contain the Firal Studios Banner -> still need to make -->
+	</div>
+	<div id="me">
+		<img id="myFace" src="smallerFace.jpg" alt="A picture of me">
+		<h1>Zackary Misso</h1>
+		<p class="subtitle">Programmer, Amatuer Artist, and Amatuer Musician</p>
+		<br /><br /><br /> <!-- TODO :: Clean up the br tags -->
+		<p class="intro">I am currently a Junior studying Computer Science at the University</p>
+		<p class="intro">University of Texas at Austin within the Turing Scholars Honors program.</p>
+		<p class="intro">I am interested in the fields of Artificial Intelligence, Computer Graphics,</p>
+		<p class="intro">and Physical Simulation. Also, I have an interest in Game Design as a hobby.</p>
+	  <!-- of Texas at Austin within the Turing Scholars Honors program. I am interested<br />
+		interested in the fields of Artificial Intelligence, Computer Graphics, <br />
+		and Physical Simulation. Also, I have an interest in Game Design as a hobby.</p>-->
+		<!--<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /> --> <!-- <br /><br /> -->
+		<nav>
+			<a href="#section-projects">Programming Projects</a>
+			<!-- <a href="#section-games">Games</a>  TODO :: implement content -->
+			<!-- <a href="#section-art">Art</a> TODO :: implement content -->
+			<!-- <a href="#section-music">Music</a> TODO :: implement content -->
+			<a href="#section-contact">Contact Me</a>
+		</nav>
+	</div>
+
+	<hr>
+
+	<div id="section-projects">
+		<h1>Programming Projects</h1>
+		<br />
+		<hr style="height:1px;border:none;color:#333;background-color:#333" />
+		<section style="background:#121212;">
+			<!-- Implementation of NEAT -->
+			<h2>NEAT Research Project</h2>
+			<!-- <img> -->
+			<p style="max-width:1000px;margin-left:19%;text-indent:40px;">From Spring 2014 - Fall 2015, I worked on a research project within the University of Texas's
+			Freshman Research Initiative program to attempt to develop an Artificial Intellegent agent to play
+			and beat the SNES version of the Super Mario Bros. Game using my own implementation of the NEAT
+			algorithm. The Neuroevolution of Augmented Topologies (NEAT) algorithm was originally developed by
+			<a href="http://www.cs.ucf.edu/~kstanley/">Dr. Stanley</a> for his disertation and it provided a novel way to evolve a Neural Network to solve a
+			problem by using an idea called speciation - seperating neural nets into groups (species) that are
+			similar and restricting which networks they can 'breed' with to only those within their species.
+			Another key aspect of this algorithm is that the evolution process provides mutatation to both the
+			Network structure and the weights of the individual neurons. Unlike Deep Learning, which creates
+			large, non-changing network structure and then evolves the weights to solve a problem, NEAT begins
+			with a population of the smallest possible network structure and expands it through mutation.</p>
+			<p style="max-width:1000px;margin-left:19%;text-indent:40px;">Using Stanley's disertation which described the NEAT algorithm as a reference, I created my own
+			implementation of it to be ran with my own implementation of the Super Mario Bros. game. As a part
+			of a voluntary research fellowship, I worked, and for the most part finished, the NEAT implentation
+			over the summer after my Freshman year. During the next fall semester my collegue, Mark Bakke, joined
+			me on this project and helped with implementing the game and running some of our experiments. The
+			best individual that we were able to evolve on our last experiment can be seen in the video below.</p>
+			<p style="text-align:center;">Video to be added will be added to the site soon.</p>
+			<p style="text-align:center;">In the meantime go <a href="">here</a> to see it</p>
+		</section>
+		<hr style="height:1px;border:none;color:#333;background-color:#333" />
+		<section>
+			<!-- Physics Engine -->>
+			<h2>Physics Engine</h2>
+			<!-- <img> -->
+			<p style="max-width:1000px;margin-left:19%;text-indent:40px;">During the summer of 2015 I implemented a Two Dimensional Physics Engine that combines what I
+			learned in both of my Linear Algebra and Physics Mechanics classes. It can handle any n-sided shape
+			as well as circles and the collisions between any combination of them. The engine also simulates
+			accurate impulse resolution along rotations. I am currently implementing more test cases to display
+			my physics engine, but you can check out the current simulations below.</p>
+			<p style="text-align:center;">Images to be added...</p>
+			<!-- Put links to the videos here -->
+		</section>
+		<hr style="height:1px;border:none;color:#333;background-color:#333" />
+		<section style="background:#121212;">
+			<!-- RayTracing Algorithm -->
+			<h2>Simple Ray Tracing Algorithm</h2>
+			<!-- <img> -->
+			<p style="max-width:1000px;margin-left:19%;text-indent:40px;">During Spring of 2015, I decided to try to learn more about the field of Computer Graphics, so
+			as an initial project I decided to create implement a Ray Tracing algorithm. Ray Tracing is a
+			technique for simulating the lighting for a scene where every pixel in the image for the scene is
+			calculated by following a ray from that pixel straight into the scene, discovering what objects
+			and where on those objects those rays intercept. From there, more rays are generated to
+			bounce off from that location to simulate refraction and a ray is shot from that location to every
+			light source in the scene to calculate the light at for the pixel based on the distance to the
+			light source and the objects between the ray's origin and the light source. My implementation of
+			ray tracing does not include refractions yet, but it will soon. Below are some of the images that
+			I have generated using my algorithm.</p>
+			<p style="text-align:center;">Images to be added...</p>
+		</section>
+		<hr style="height:1px;border:none;color:#333;background-color:#333" />
+		<section>
+			<!-- HackerCentral Organizational App -->
+			<h2>Hacker Central</h2>
+			<h4>(Work in Progress)</h4>
+			<!-- <img> -->
+			<p style="max-width:1000px;margin-left:19%;text-indent:40px;">I have always disliked having multiple different applications to organize the different aspects
+			of my life. For example, using Outlook for my calendar, Excel files for keeping track of finances,
+			and random text files within my side programming projects to keep track of future tasks. So, this
+			application is a simple bare-bones solution to aggregate all aspects of my life into one application.
+			It is currently a work in progress, but I have made a lot of progress on it and I plan on finishing
+			a working version by September. One thing of note that I really am looking forward to integrating
+			with this application is the personal Artificial Intelligent agent, Cortana, on Windows 10. Since
+			there is an API that allows for programmable interactions between Cortana and the user, I am
+			looking forward to making this application completely voice controlled.</p>
+			<p style="text-align:center;">Images to be added...</p>
+		</section>
+		<hr style="height:1px;border:none;color:#333;background-color:#333" />
+		<section style="background:#121212;">
+			<!-- Level Editor -->
+			<h2>Level Editor</h2>
+			<!-- <img> -->
+			<p style="max-width:1000px;margin-left:19%;text-indent:40px;">As a side project that spun off of my implementation of Super Mario Bros, I began implementing
+			a Level Editor that could be used to make a level for any type of two dimensional game. To accomplish
+			this I created it so that the level designer could assign each entity in the level the exact types
+	    that would represent their variables in source code. Thus, making it so that the level editor generic
+			enough for a level designer to make a level for any imaginable game. I did not finish all of the
+			functionality for this project that I wanted to implement, however, I plan on finishing it in the
+			future. All of the required features for it to be a functioning level editor are implemented, and you
+			can see a video of me implementing a very simple level for Super Mario Bros. below.
+			<p style="text-align:center;">Video still being made. Feel free to go <a href="">here</a> for a shorter example of the Level Editor...</p>
+		</section>
+	</div>
+
+
+
+<!--	<div id="section-projects">
+		<h1>Programming Projects</h1>
+		<br />
+		<hr style="height:1px;border:none;color:#333;background-color:#333" />
+		<section style="background:#101010;"> -->
+			<!-- Implementation of NEAT -->
+			<!-- <h2>NEAT Research Project</h2> -->
+			<!-- <img> -->
+			<!-- <p>From Spring 2014 - Fall 2015, I worked on a research project within the University of Texas's <br /> --><!-- <br id="contentBreak" /> -->
+			<!-- Freshman Research Initiative program to attempt to develop an Artificial Intellegent agent to play <br />
+			and beat the SNES version of the Super Mario Bros. Game using my own implementation of the NEAT <br />
+			algorithm. The Neuroevolution of Augmented Topologies (NEAT) algorithm was originally developed by <br />
+			<a href="http://www.cs.ucf.edu/~kstanley/">Dr. Stanley</a> for his disertation and it provided a novel way to evolve a Neural Network to solve a <br />
+			problem by using an idea called speciation - seperating neural nets into groups (species) that are <br />
+			similar and restricting which networks they can 'breed' with to only those within their species. <br />
+			Another key aspect of this algorithm is that the evolution process provides mutatation to both the <br />
+			Network structure and the weights of the individual neurons. Unlike Deep Learning, which creates <br />
+			large, non-changing network structure and then evolves the weights to solve a problem, NEAT begins <br />
+			with a population of the smallest possible network structure and expands it through mutation.</p>
+			<p>Using Stanley's disertation which described the NEAT algorithm as a reference, I created my own <br />
+			implementation of it to be ran with my own implementation of the Super Mario Bros. game. As a part <br />
+			of a voluntary research fellowship, I worked, and for the most part finished, the NEAT implentation <br />
+			over the summer after my Freshman year. During the next fall semester my collegue, Mark Bakke, joined <br />
+			me on this project and helped with implementing the game and running some of our experiments. The <br />
+			best individual that we were able to evolve on our last experiment can be seen in the video below.</p>
+			<p>Video to be added...</p>
+		</section>
+		<hr style="height:1px;border:none;color:#333;background-color:#333" />
+		<section> -->
+			<!-- Physics Engine -->
+			<!-- <h2>Physics Engine</h2>-->
+			<!-- <img> -->
+			<!-- <p>During the summer of 2015 I implemented a Two Dimensional Physics Engine that combines what I <br />
+			learned in both of my Linear Algebra and Physics Mechanics classes. It can handle any n-sided shape <br />
+			as well as circles and the collisions between any combination of them. The engine also simulates <br />
+			accurate impulse resolution along rotations. I am currently implementing more test cases to display <br />
+			my physics engine, but you can check out the current simulations below.</p>
+			<p>Images to be added...</p> -->
+			<!-- Put links to the videos here -->
+		<!-- </section>
+		<hr style="height:1px;border:none;color:#333;background-color:#333" />
+		<section style="background:#101010;"> -->
+			<!-- RayTracing Algorithm -->
+			<!-- <h2>Simple Ray Tracing Algorithm</h2> -->
+			<!-- <img> -->
+			<!-- <p>During Spring of 2015, I decided to try to learn more about the field of Computer Graphics, so <br />
+			as an initial project I decided to create implement a Ray Tracing algorithm. Ray Tracing is a <br />
+		  technique for simulating the lighting for a scene where every pixel in the image for the scene is <br />
+		  calculated by following a ray from that pixel straight into the scene, discovering what objects <br />
+			and where on those objects those rays intercept. From there, more rays are generated to <br />
+			bounce off from that location to simulate refraction and a ray is shot from that location to every <br />
+			light source in the scene to calculate the light at for the pixel based on the distance to the <br />
+			light source and the objects between the ray's origin and the light source. My implementation of <br />
+		 	ray tracing does not include refractions yet, but it will soon. Below are some of the images that <br />
+			I have generated using my algorithm.</p>
+			<p>Images to be added...</p>
+		</section>
+		<hr style="height:1px;border:none;color:#333;background-color:#333" />
+		<section> -->
+			<!-- HackerCentral Organizational App -->
+			<!-- <h2>Hacker Central</h2>
+			<h4>(Work in Progress)</h4> -->
+			<!-- <img> -->
+			<!-- <p>I have always disliked having multiple different applications to organize the different aspects <br />
+			of my life. For example, using Outlook for my calendar, Excel files for keeping track of finances, <br />
+			and random text files within my side programming projects to keep track of future tasks. So, this <br />
+			application is a simple bare-bones solution to aggregate all aspects of my life into one application. <br />
+			It is currently a work in progress, but I have made a lot of progress on it and I plan on finishing <br />
+			a working version by September. One thing of note that I really am looking forward to integrating <br />
+			with this application is the personal Artificial Intelligent agent, Cortana, on Windows 10. Since <br />
+		 	there is an API that allows for programmable interactions between Cortana and the user, I am <br />
+			looking forward to making this application completely voice controlled.</p>
+			<p>Images to be added...</p>
+		</section>
+		<hr style="height:1px;border:none;color:#333;background-color:#333" />
+		<section style="background:#101010;"> -->
+			<!-- Level Editor -->
+			<!-- <h2>Level Editor</h2> -->
+			<!-- <img> -->
+			<!-- <p>As a side project that spun off of my implementation of Super Mario Bros, I began implementing <br />
+			a Level Editor that could be used to make a level for any type of two dimensional game. To accomplish <br />
+			this I created it so that the level designer could assign each entity in the level the exact types <br />
+			that would represent their variables in source code. Thus, making it so that the level editor generic <br />
+			enough for a level designer to make a level for any imaginable game. I did not finish all of the <br />
+			functionality for this project that I wanted to implement, however, I plan on finishing it in the <br />
+			future. All of the required features for it to be a functioning level editor are implemented, and you <br />
+			can see a video of me implementing a very simple level for Super Mario Bros. below.</p>
+			<p>Video still being made. Feel free to go <a href="">here</a> for a shorter example of the Level Editor...</p>
+		</section>
+	</div> -->
+
+	<hr>
+
+	<!-- These Sections still need to be implemented
+	<div id="section-games">
+		<h1>Games I have worked on</h1>
+		<br />
+		<p>This section is currently under construction</p>
+	</div>
+
+	<hr>
+
+	<div id="section-art">
+		<h1>Art</h1>
+		<br />
+		<p>This section is currently under construction</p>
+	</div>
+
+	<hr>
+
+	<div id="section-music">
+		<h1>Music</h1>
+		<br />
+		<p>This section is currently under construction</p>
+	</div>
+
+	<hr>
+	-->
+	<div id="section-contact">
+		<h1>Contact Me</h1>
+		<br />
+		<p>Feel free to send me email at zack441(at).com. I am up for collaboration on any and all projects.</p>
+		<br />
+	<ul>
+		<li id="contactLI"><a href="https://github.com/ZackMisso">GitHub</a></li>
+		<li id="contactLI"><a href="https://www.linkedin.com/pub/zackary-misso/8b/32b/752">LinkedIn</a></li>
+  </ul>
+	</div>
+
+<!-- OLD WEBSITE STYLE
 	<div id="main">
 		<h1>Firal Studios</h1>
 		<table align="center" border="1" width="600">
@@ -20,6 +271,7 @@
 		<p>This website is still under construction, however it is going to be updated every Saturday or Sunday. I am still working on the design for the site as well as adding content so nothing on this site is currently finished. Please forgive me for any broken links and empty pages until I get a finished draft completed.</p>
 		<p>While the site is being worked on please feel free to view my GitHub profile <a href="https://github.com/ZackMisso">here</a> if you are interested in my programming projects or my LinkedIn profile <a href="https://www.linkedin.com/profile/preview?locale=en_US&trk=prof-0-sb-preview-primary-button">here</a> if you are interested in my work experiance. My work experiance is also described in my <a href="bio.html">Bio</a> which is almost finished. I just need to proof read it.</p>
 		<p>My Music and Art pages will be empty for a while because my priorities are on getting my Project pages done.</p>
-	</div>
+	</div> -->
+
 </body>
 </html>
