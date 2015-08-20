@@ -69,6 +69,24 @@ body {
 	padding: 64px 0 0 0;
 }
 
+#section-reading {
+	position: relative;
+	text-align: center;
+	box-sizing: border-box;
+	min-height: 380px;
+	/* height: 2000px; */
+	padding: 64px 0 0 0;
+}
+
+#section-current {
+	position: relative;
+	text-align: center;
+	box-sizing: border-box;
+	min-height: 380px;
+	/* height: 2000px; */
+	padding: 64px 0 0 0;
+}
+
 #section-contact {
 	position: relative;
 	background: url('contactBackground.jpg');
