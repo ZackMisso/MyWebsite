@@ -10,15 +10,18 @@
 	</div>
   <div id="titleDiv">
     <!-- Contain the title portion of the page -->
+		<br />
     <h1>Game Engine - (to be named)</h1>
-    <h3>A project for my Junior year</h3>
-    <h5>Updated 08/20/2015</h5>
+    <h3 style="color:#0046a0">A project for my Junior year</h3>
+    <h5 style="color:#364800">Updated 08/20/2015</h5>
     <!-- TODO :: Add images -->
   </div>
+	<br />
   <div id="bodyDiv">
     <!-- Going to contain the body portion of the page -->
-    <h3>The Idea</h3>
-    <p>What initially got me into Computer Science was my interest in Video Games. This seems to be the case with many people studying
+    <h3 style="color:#0046a0">The Idea</h3>
+		<!-- 266px -->
+    <p style="max-width:1000px;margin-left:19%;text-indent:40px;color:#c0c0c0;">What initially got me into Computer Science was my interest in Video Games. This seems to be the case with many people studying
     Computer Science, but I would argue my interests are slightly different. You see, most people who are interested in the
     Video Game Industry and go to college dreaming of working in the industry are there because of their desire to make games.
     While I enjoy working on games here and there, what really got me into Computer Science was my desire to learn how and why
@@ -26,22 +29,50 @@
     or should I say game engines, are insanely complex systems that have the ability to simulate real(ish) physics, play audio,
     project three dimensional scenes as two dimensional images, draw those images, and does all of this in real time no less.
     But, duh, everyone knows what a game engine is.</p>
-    <p>However, very few people have ever implemented a (legit) one. Why? Because it requires a vast understanding of Physics,
-    Linear Algebra, Graphics programming, File Systems, MultiThreading, Compilers/Interpreters (for scripting), and the list
-    goes on. So, as an ambitious year long project, I am going to be attempting to implement my own MultiThreaded, and hopefully
-    Modular, Game Engine.</p>
-    <h3>The Plan</h3>
-    <p></p>
-    <h3>Current Progress</h3>
-    <p>This project is currently in the planning stages. Updates will come soon.</p>
+    <p style="max-width:1000px;margin-left:19%;text-indent:40px;color:#c0c0c0;">However, very few people have ever implemented a (legit) one. Why? Because it requires a vast understanding of Physics,
+    Linear Algebra, Graphics Programming, File Systems, Multi-Threading, Compilers/Interpreters (for scripting), and the list
+    goes on. So, as an ambitious year long project, I am going to be attempting to implement my own Multi-Threaded, and Modular
+		Game Engine.</p>
+    <h3 style="color:#0046a0">The Plan</h3>
+		<table>
+			<tr>
+				<td>
+					<p style="max-width:480px;text-indent:40px;">Before I begin to write out my plan for this project, I am going to describe what I believe to be the hypothetical
+					best modular Game Engine. By modular I mean the ability to change some of the core functionality, or even an entire
+					subsystem, without having a large impact on the game being developed on the engine. The engine will not be the most
+					effiecient, however, I want it to be able to support any design choice without much change to the core structure. For
+					example, if someone wanted to render their game using a Ray Tracing algorithm instead of a Rasterizer like OpenGL, or
+					DirectX, there should be no extra work to the engine other than implementing the Ray Tracing algorithm. <i style="color:#950000;">Every subsystem
+					within the engine should be designed so that any part can be replaced without having to modify any other subsystem.</i>
+					</p>
+					<p style="max-width:480px;text-indent:40px;">A result of this implementation would be an Engine that would be inherently Cross-Platform. The layer of abstraction
+					created by making such a modular engine would allow for any portion of the engine to be modified for any (maybe not mobile
+					due to no support for C++ Apps, However, you could always write a wrapper but that would be painful) platform. Due to my
+					lack of experiance within many of the topics required to write a good engine, I am going to make up for the efficiency
+					hit to the engine's design with such a modular end product that if someone with more experiance within those topics
+					wanted to use my engine, they could easily improve whatever they need improved.</p>
+				</td>
+				<td>
+					<p>Add in Image...</p>
+				</td>
+			</tr>
+		</table>
+		<p style="max-width:1000px;margin-left:19%;text-indent:40px;color:#c0c0c0;">
+			Currently Under Construction...
+		</p>
+    <h3 style="color:#0046a0">Current Progress</h3>
+    <p style="max-width:1000px;margin-left:19%;text-indent:40px;color:#c0c0c0;">This project is currently in the planning stages. Updates will come
+		very soon.</p>
   </div>
   <div id="conclusionDiv">
     <!-- Going to contain the conclusion of the page -->
-    <p>If this projects interests you, feel free to contact me at zack441(at)mac.com if you would like to collaborate with me, or
+    <p style="max-width:1000px;margin-left:19%;text-indent:40px;color:#c0c0c0;">If this projects interests you, feel free to contact me at zack441(at)mac.com if you would like to collaborate with me, or
     if you would like to learn more about my idea. Thanks for reading and I hope it was of interest!</p>
     <!-- Add in signature -->
   </div>
   <div id="footer">
+		<br />
+		<br />
     <!-- Going to contain the footer of the page -->
     <!-- Add in Home link -->
     <!-- Add in projects link -->

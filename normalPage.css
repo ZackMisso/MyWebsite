@@ -1,15 +1,21 @@
-#titleDiv{
+#titleDiv {
   /* to be implemented */
 }
 
-#bodyDiv{
+#bodyDiv {
   /* to be implemented */
 }
 
-#conclusionDiv{
+#conclusionDiv {
   /* to be implemented */
 }
 
-#footerDiv{
+#footerDiv {
   /* to be implemented */
+}
+
+table {
+  margin-left: 19%;
+  max-width: 1000px;
+  min-width: 1000px;
 }

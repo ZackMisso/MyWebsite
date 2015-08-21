@@ -1,6 +1,7 @@
 body {
 	/* background: #000000; */ /* 196dff */
 	background: #000000;
+	min-width: 1400px;
 	/* background: url('backgroundSmaller2.jpg'); */
 	/* background-attachment: fixed; */
 	/* text-align: center; */
@@ -165,6 +166,7 @@ nav a{
 
 h1 {
 	text-align: center;
+	/*margin-left: 498;*/ /* TODO :: Customize all of the margins for the site */
 	color: #00aa00;
 	font-family: "Times New Roman";
 	/* background: #ff3819; */
@@ -192,6 +194,12 @@ h4 {
 	text-align: center;
 	font-family: "Times New Roman";
 	color: #8a0000;
+}
+
+h5 {
+	text-align: center;
+	font-family: "Times New Roman";
+	color: #cccccc;
 }
 
 /*hr {
