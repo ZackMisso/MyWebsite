@@ -45,7 +45,7 @@ body {
 
 #section-games {
 	position: relative;
-	text-align: center;
+	/* text-align: center; */
 	box-sizing: border-box;
 	min-height: 380px;
 	/* height: 2000px; */
@@ -54,7 +54,7 @@ body {
 
 #section-art {
 	position: relative;
-	text-align: center;
+	/* text-align: center; */
 	box-sizing: border-box;
 	min-height: 380px;
 	/* height: 2000px; */
@@ -63,7 +63,7 @@ body {
 
 #section-music {
 	position: relative;
-	text-align: center;
+	/* text-align: center; */
 	box-sizing: border-box;
 	min-height: 380px;
 	/* height: 2000px; */
@@ -72,7 +72,52 @@ body {
 
 #section-reading {
 	position: relative;
-	text-align: center;
+	/* text-align: center; */
+	box-sizing: border-box;
+	min-height: 380px;
+	/* height: 2000px; */
+	padding: 64px 0 0 0;
+}
+
+#aet326-project1 {
+	position: relative;
+	/* text-align: center; */
+	box-sizing: border-box;
+	min-height: 380px;
+	/* height: 2000px; */
+	padding: 64px 0 0 0;
+}
+
+#aet326-project2 {
+	position: relative;
+	/* text-align: center; */
+	box-sizing: border-box;
+	min-height: 380px;
+	/* height: 2000px; */
+	padding: 64px 0 0 0;
+}
+
+#aet326-project3 {
+	position: relative;
+	/* text-align: center; */
+	box-sizing: border-box;
+	min-height: 380px;
+	/* height: 2000px; */
+	padding: 64px 0 0 0;
+}
+
+#aet326-project4 {
+	position: relative;
+	/* text-align: center; */
+	box-sizing: border-box;
+	min-height: 380px;
+	/* height: 2000px; */
+	padding: 64px 0 0 0;
+}
+
+#aet326-project5 {
+	position: relative;
+	/* text-align: center; */
 	box-sizing: border-box;
 	min-height: 380px;
 	/* height: 2000px; */
