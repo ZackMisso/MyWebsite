@@ -1,12 +1,163 @@
-body, html{
+.container
+{
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+body, html
+{
     height:100%;
-    margin:0;
+    margin-top: 0px;
+    padding-top: 0px;
     font-size:16px;
     font-family:"Lato", sans-serif;
     font-weight:400;
     line-height:1.8em;
     color:#666;
 }
+
+.profile
+{
+    padding-top: 40px;
+    padding-left: 0px;
+}
+
+.portrait
+{
+    background-image: url('../images/onlyFace.png');
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    border-radius: 50%;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+}
+
+.portrait-text
+{
+    text-align: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.navbar-default
+{
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    line-height: 1.25;
+    text-rendering: optimizeLegibility;
+}
+
+.header
+{
+    max-width:768px;
+    margin: auto;
+    color: #333;
+    text-align: center;
+    padding: 1em 0.5em 0 0.5em;
+    border-bottom: 1px solid #eee;
+}
+
+.social-icon
+{
+    text-align: center;
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.social-icon li
+{
+    display: inline;
+}
+
+.link-img
+{
+    width:32px;
+    height:32px;
+}
+
+.bio
+{
+    max-width:768px;
+    margin: auto;
+}
+
+.header-title
+{
+    font-size: 1.5em;
+    padding-left: 0;
+    padding-right: 116px;
+}
+
+.header-item
+{
+    padding-right: 16px;
+}
+
+.links
+{
+    text-align: center;
+    position: relative;
+}
+
+.links ul
+{
+    width: 100%;
+    display: inline-block;
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.links a
+{
+    color: #777;
+    line-height: 1.5em;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+/****************************************************
+ * Navigation Bar Stuff
+ ***************************************************/
+
+.navbar
+{
+    min-height:60px !important;
+}
+
+.navbar-default
+{
+    background:#fff
+    -webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+    box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+}
+
+nav#navbar-main li
+{
+    font-size: 16px;
+}
+
+#nav-ul li
+{
+    display:inline;
+}
+
+.navbar-default .navbar-nav li a,
+.navbar-default .navbar-nav li a:visited
+{
+    white-space:nowrap;
+    -webkit-transition: 0.2s ease;
+    color: #565a5f;
+}
+
+
 
 .img1, .img2, .img3{
     position:relative;
