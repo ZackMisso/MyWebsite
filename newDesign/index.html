@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initiali-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UV-Compatible" content="ie=edge">
     <title>Zack Misso</title>
     <link rel="stylesheet" href="css/style.css">
@@ -11,7 +11,13 @@
 <body>
 
     <div class="header">
+        <!-- * new title based header -->
         <div class="links">
+            <a class="header-title-center" href="index.html">Zack Misso</a>
+        </div>
+
+        <!-- * old link based header -->
+        <!-- <div class="links">
             <ul id="nav-ul">
                 <li class="header-title">
                     <a class="header-title" href="index.html">Zack Misso</a>
@@ -29,14 +35,14 @@
                     <a href="index.html">Contact Me</a>
                 </li>
             </ul>
-        </div>
+        </div> -->
     </div>
 
     <!-- <div class="section-cl"> -->
     <section id="bio" class="section-cl">
         <div class="col-xs-12 col-md-4">
             <div id="profile" class="profile">
-                <div class="portrait" itemprop="image" style="background-image: 'images/onlyFace.png';"></div>
+                <div class="portrait" itemprop="image"></div>
 
                 <div class="portrait-title">
                     <h3 class="portrait-text">PhD Student</h3>
@@ -80,12 +86,16 @@
             </p>
 
             <p>
-                My interests lie in the fields of physically based rendering, artificial intelligence,
+                My interests lie in the fields of physically-based rendering, artificial intelligence,
                 and a smidge of physical simulation.
             </p>
 
             <p>
                 In a previous life, I wanted to develop video games.
+            </p>
+
+            <p>
+                Currently interning at Autodesk on the Arnold rendering team.
             </p>
         </div>
     </section>
@@ -103,31 +113,33 @@
 
             <div class="col-xs-6 col-md-6">
                 <h3>Integral formulation of volumetric transmittance</h3>
-                <h4>authors :: TODO</h4>
+                <p>ACM Transactions on Graphics (Proc. of SIGGRAPH Asia), 2019</p>
             </div>
         </div>
     </section>
 
     <section id="projects" class="section-cl">
         <h1 class="section-title">
-            Projects
+            Notable Projects
         </h1>
 
         <div class="publication">
             <div class="col-xs-6 col-md-6">
-                <img class="demo-img" src="images/interesting.png"></img>
+                <a href="https://github.com/ZackMisso/FeignRenderer">
+                    <img class="demo-img" src="images/interesting.png"></img>
+                </a>
             </div>
 
             <div class="col-xs-6 col-md-6">
                 <h3>Feign Renderer</h3>
-                <h4>My personal hobby rendering engine</h4>
+                <p>My personal hobby rendering engine which I improve upon from time to time. Currently in an unrunnable state, but will be working again shortly.</p>
             </div>
         </div>
     </section>
 
     <section id="games" class="section-cl">
         <h1 class="section-title">
-            Games
+            Game Development
         </h1>
 
         <div class="publication">
@@ -139,18 +151,20 @@
 
             <div class="col-xs-6 col-md-6">
                 <h3>Hope and Haven</h3>
-                <h4>devs :: TODO</h4>
+                <p>Follow the adventures of a band of dieselpunk soldiers as they try to find their way back to their time. Face hordes of sword and magic wielding foes as you fight your way back home. Get to know quirky characters and a questionable witch as you learn more about...</p>
             </div>
         </div>
 
         <div class="publication">
             <div class="col-xs-6 col-md-6">
-                <img class="demo-img" src="images/shotgun_princess.png"></img>
+                <a href="https://fractalouthaul.itch.io/shotgun-princess">
+                    <img class="demo-img" src="images/shotgun_princess.png"></img>
+                </a>
             </div>
 
             <div class="col-xs-6 col-md-6">
                 <h3>Shotgun Princess</h3>
-                <h4>devs :: TODO</h4>
+                <p>You're the Princess, Ada Lovelace, who lived her entire life secluded inside a tower. One day, a prince accepts the challenge of your father to come rescue you and whisk you away to a happily-ever after. Fed up with how you've been treated you decide it's time...</p>
             </div>
         </div>
     </section>
