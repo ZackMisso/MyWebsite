@@ -1,0 +1,295 @@
+.container
+{
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+body, html
+{
+    height:100%;
+    margin-top: 0px;
+    padding-top: 0px;
+    font-size: 24px;
+    font-family:"Lato", sans-serif;
+    font-weight:400;
+    line-height:1.8em;
+    color:#666;
+}
+
+p
+{
+    padding-top: 18px;
+    font-size: 14px;
+    text-align: left;
+}
+
+.profile
+{
+    padding-top: 40px;
+    padding-left: 0px;
+}
+
+.portrait
+{
+    background-image: url("../images/me_photo.jpg");
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    border-radius: 50%;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+}
+
+.portrait-text
+{
+    text-align: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.navbar-default
+{
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    line-height: 1.25;
+    text-rendering: optimizeLegibility;
+}
+
+.header
+{
+    max-width:768px;
+    margin: auto;
+    color: #333;
+    text-align: center;
+    padding: 1em 0.5em 0 0.5em;
+    border-bottom: 1px solid #eee;
+}
+
+.social-icon
+{
+    text-align: center;
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.social-icon li
+{
+    display: inline;
+}
+
+.link-img
+{
+    width:32px;
+    height:32px;
+}
+
+.second-section
+{
+    max-width:768px;
+    margin: auto;
+}
+
+.section-cl
+{
+    max-width:768px;
+    padding: 1em 0.5em 0 0.5em;
+    border-top: 2px solid #eee;
+    overflow: hidden;
+    margin: auto;
+}
+
+.section-title
+{
+    text-align: center;
+    padding-bottom: 24px;
+}
+
+.demo-img
+{
+    width:100%;
+    /* height:180px; */
+}
+
+.teaser-img
+{
+    width:100%;
+    /* height:180px; */
+}
+
+.publication
+{
+    overflow: hidden;
+    padding-bottom: 32px;
+}
+
+.header-title
+{
+    font-size: 1.5em;
+    padding-left: 0;
+    padding-right: 116px;
+}
+
+.header-title-center
+{
+    font-size: 1.5em;
+    padding-left: 0;
+    padding-right: 0px;
+}
+
+.header-item
+{
+    padding-right: 16px;
+}
+
+.links
+{
+    text-align: center;
+    position: relative;
+}
+
+.links ul
+{
+    width: 100%;
+    display: inline-block;
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.links a
+{
+    color: #777;
+    line-height: 1.5em;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.download-links
+{
+    text-align: left;
+    position: relative;
+}
+
+.download-links ul
+{
+    width: 100%;
+    display: inline-block;
+    list-style-type: square;
+}
+
+.download-links a
+{
+    color: #777;
+    line-height: 1.5em;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+/****************************************************
+ * Navigation Bar Stuff
+ ***************************************************/
+
+.navbar
+{
+    min-height:60px !important;
+}
+
+.navbar-default
+{
+    background:#fff
+    -webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+    box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+}
+
+nav#navbar-main li
+{
+    font-size: 16px;
+}
+
+#nav-ul li
+{
+    display:inline;
+}
+
+.navbar-default .navbar-nav li a,
+.navbar-default .navbar-nav li a:visited
+{
+    white-space:nowrap;
+    -webkit-transition: 0.2s ease;
+    color: #565a5f;
+}
+
+.img1, .img2, .img3{
+    position:relative;
+    opacity:0.70;
+    background-position:center;
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+}
+
+.img1{
+    background-image:url('../img/city11.jpg');
+    min-height:100%;
+}
+
+.img2{
+    background-image:url('../img/city12.jpg');
+    min-height:400px;
+}
+
+.img3{
+    background-image:url('../img/city13.jpg');
+    min-height:400px;
+}
+
+.section{
+    text-align:center;
+    padding:50px 80px;
+}
+
+.section-dark{
+    background-color:#282e34;
+    color:#ddd;
+}
+
+.section-light{
+    background-color:#f4f4f4;
+    color:#666;
+}
+
+.abstract-line
+{
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: #888;
+    margin-bottom: -10px;
+}
+
+.ptext{
+    position:absolute;
+    top:50%;
+    width:100%;
+    text-align:center;
+    color:#000;
+    font-size:27px;
+    letter-spacing:8px;
+    text-transform:uppercase;
+}
+
+.ptext .border{
+    background-color:#111;
+    color:#fff;
+    padding:20px;
+}
+
+.ptext .border.trans{
+    background-color:transparent;
+}

@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UV-Compatible" content="ie=edge">
+    <title>Integral formulations of volumetric transmittance</title>
+    <link rel="stylesheet" href="css/pub_style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+
+    <div class="header">
+        <!-- * new title based header -->
+        <div class="links">
+            <a class="header-title-center"  href="index.html">Zack Misso</a>
+        </div>
+
+        <!-- * old link based header -->
+        <!-- <div class="links">
+            <ul id="nav-ul">
+                <li class="header-title">
+                    <a class="header-title" href="index.html">Zack Misso</a>
+                </li>
+                <li class="header-item">
+                    <a href="index.html">Publications</a>
+                </li>
+                <li class="header-item">
+                    <a href="index.html">Projects</a>
+                </li>
+                <li class="header-item">
+                    <a href="index.html">Games</a>
+                </li>
+                <li class="header-item">
+                    <a href="index.html">Contact Me</a>
+                </li>
+            </ul>
+        </div> -->
+    </div>
+
+    <section id="intro" class="section-cl">
+        <h2 style="text-align: center; margin-bottom:-10px">Integral formulations of volumetric transmittance</h2>
+        <div class="links">
+            <p style="text-align: center; margin-bottom:-10px"><a href="http://www.iliyan.com/">Iliyan Georgiev</a>, <b>Zackary Misso</b>, <a href="https://www.ci.i.u-tokyo.ac.jp/~hachisuka/">Toshiya Hachisuka</a>, <a href="http://www.cim.mcgill.ca/~derek/">Derek Nowrouzezahrai</a>, <a href="https://cgg.mff.cuni.cz/~jaroslav/">Jaroslav Křivánek</a>, <a href="https://cs.dartmouth.edu/~wjarosz/">Wojciech Jarosz</a></p>
+        </div>
+        <p style="text-align:center"><b><i>SIGGRAPH ASIA 2019</i></b></p>
+
+        <img src="publications/transm_sa_2019/teaser.jpg" class="teaser-img"></img>
+        <p>Equal-lookup comparisons of various estimators in a scene with both homogeneous (chess board) and heterogeneous (chess pieces) media. Our proposed estimators (in bold) trade more extinction lookups for lower-variance estimates of transmittance. RMSE and render times are for the entire image.</p>
+        <h2 style="margin-bottom:-10px">Abstract</h2>
+        <hr class="abstract-line"/>
+        <p>Computing the light attenuation between two given points is an essential yet expensive task in volumetric light transport simulation. Existing unbiased transmittance estimators are all based on "null-scattering" random walks enabled by augmenting the media with fictitious matter. This formulation prevents the use of traditional Monte Carlo estimator variance analysis, thus the efficiency of such methods is understood from a mostly empirical perspective. In this paper, we present several novel integral formulations of volumetric transmittance in which existing estimators arise as direct Monte Carlo estimators. Breaking from physical intuition, we show that the null-scattering concept is not strictly required for unbiased transmittance estimation, but is a form of control variates for effectively reducing variance. Our formulations bring new insight into the problem and the efficiency of existing estimators. They also provide a framework for devising new types of transmittance estimators with distinct and complementary performance tradeoffs, as well as a clear recipe for applying sample stratification.</p>
+        <hr class="abstract-line" style="margin-bottom:0px"/>
+        <h2>Downloads and links</h2>
+        <div class="download-links">
+            <ul>
+                <li><a href="publications/transm_sa_2019/TransmittanceFormulations_SigAsia2019.pdf">Paper</a></li>
+                <li><a href="">Supplemental - interactive image comparisons</a></li>
+                <li><a href="https://github.com/ZackMisso/TransmittanceEstimation">Code</a></li>
+                <li><a href="publications/transm_sa_2019/citation.bib">Citation</a></li>
+            </ul>
+        </div>
+
+    </section>
+
+    <!-- <div class="section-cl"> -->
+    <!-- <section id="bio" class="section-cl">
+        <div class="col-xs-12 col-md-4">
+            <div id="profile" class="profile">
+                <div class="portrait" itemprop="image"></div>
+
+                <div class="portrait-title">
+                    <h3 class="portrait-text">PhD Student</h3>
+                </div>
+
+                <ul class="social-icon">
+                    <li>
+                        <a href="mailto:zackary.t.misso.gr@dartmouth.edu">
+                            <img src="images/mail_icon.png" class="link-img"></img>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/ZackMisso">
+                            <img src="images/github_icon.png" class="link-img"></img>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/zackary-misso">
+                            <img src="images/square-linkedin-512.png" class="link-img"></img>
+                        </a>
+                    </li> -->
+                    <!-- <li> TODO: Create twitter and youtube channel
+                        <a href="mailto:zackary.t.misso.gr@dartmouth.edu">
+                            <img src="images/square-twitter-512.png" class="link-img"></img>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="mailto:zackary.t.misso.gr@dartmouth.edu">
+                            <img src="images/youtube-512.png" class="link-img"></img>
+                        </a>
+                    </li> -->
+                <!-- </ul>
+            </div>
+        </div>
+        <div class="col-xs-12 col-md-8" id="about">
+            <h2>Welcome! (Site under construction)</h2>
+
+            <p>
+                I am a software engineer specializing in Computer Graphics and am currently in
+                the third year of my PhD at Dartmouth.
+            </p>
+
+            <p>
+                My interests lie in the fields of physically-based rendering, artificial intelligence,
+                and a smidge of physical simulation.
+            </p>
+
+            <p>
+                In a previous life, I wanted to develop video games.
+            </p>
+
+            <p>
+                Currently interning at Autodesk on the Arnold rendering team.
+            </p>
+        </div>
+    </section> -->
+    <!-- </div> -->
+
+    <!-- <section id="publications" class="section-cl">
+        <h1 class="section-title">
+            Publications
+        </h1>
+
+        <div class="publication">
+            <div class="col-xs-6 col-md-6">
+                <img class="demo-img" src="images/simple_figure_index_2.png"></img>
+            </div>
+
+            <div class="col-xs-6 col-md-6">
+                <h3>Integral formulation of volumetric transmittance</h3>
+                <p>ACM Transactions on Graphics (Proc. of SIGGRAPH Asia), 2019</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section-cl">
+        <h1 class="section-title">
+            Notable Projects
+        </h1>
+
+        <div class="publication">
+            <div class="col-xs-6 col-md-6">
+                <a href="https://github.com/ZackMisso/FeignRenderer">
+                    <img class="demo-img" src="images/interesting.png"></img>
+                </a>
+            </div>
+
+            <div class="col-xs-6 col-md-6">
+                <h3>Feign Renderer</h3>
+                <p>My personal hobby rendering engine which I improve upon from time to time. Currently in an unrunnable state, but will be working again shortly.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="games" class="section-cl">
+        <h1 class="section-title">
+            Game Development
+        </h1>
+
+        <div class="publication">
+            <div class="col-xs-6 col-md-6">
+                <a href="https://firal.itch.io/hope-and-haven">
+                    <img class="demo-img" src="images/hope_and_haven.png"></img>
+                </a>
+            </div>
+
+            <div class="col-xs-6 col-md-6">
+                <h3>Hope and Haven</h3>
+                <p>Follow the adventures of a band of dieselpunk soldiers as they try to find their way back to their time. Face hordes of sword and magic wielding foes as you fight your way back home. Get to know quirky characters and a questionable witch as you learn more about...</p>
+            </div>
+        </div>
+
+        <div class="publication">
+            <div class="col-xs-6 col-md-6">
+                <a href="https://fractalouthaul.itch.io/shotgun-princess">
+                    <img class="demo-img" src="images/shotgun_princess.png"></img>
+                </a>
+            </div>
+
+            <div class="col-xs-6 col-md-6">
+                <h3>Shotgun Princess</h3>
+                <p>You're the Princess, Ada Lovelace, who lived her entire life secluded inside a tower. One day, a prince accepts the challenge of your father to come rescue you and whisk you away to a happily-ever after. Fed up with how you've been treated you decide it's time...</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section-cl">
+
+    </section> -->
+
+    <!-- <nav id="navbar-main" class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+
+                <a href="index.html">Zack Misso</a>
+
+                <ul id="nav-ul" class="nav navbar-nav navbar-right">
+                    <li class="nav-item">
+                        <a href="index.html">Publications</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="index.html">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="index.html">Contact Me</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </nav> -->
+    <!-- <div class="img1">
+        <div class="ptext">
+            <span class="border">
+                Parallax Website
+            </span>
+        </div>
+    </div> -->
+
+    <!-- <section class="section section-light">
+        <h2>Section One</h2>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+    </section>
+
+    <div class="img2">
+        <div class="ptext">
+            <span class="border trans">
+                IMAGE ONE
+            </span>
+        </div>
+    </div>
+
+    <section class="section section-dark">
+        <h2>Section Two</h2>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+    </section>
+
+    <div class="img3">
+        <div class="ptext">
+            <span class="border trans">
+                IMAGE TWO
+            </span>
+        </div>
+    </div>
+
+    <section class="section section-dark">
+        <h2>Section Two</h2>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+    </section>
+
+    <div class="img1">
+        <div class="ptext">
+            <span class="border">
+                Parallax Website
+            </span>
+        </div>
+    </div> -->
+
+</body>
+</html>
