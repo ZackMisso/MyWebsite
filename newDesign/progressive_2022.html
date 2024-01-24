@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UV-Compatible" content="ie=edge">
+    <title>Progressive null-tracking for volumetric rendering</title>
+    <link rel="stylesheet" href="css/pub_style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+
+    <div class="header">
+        <!-- * new title based header -->
+        <div class="links">
+            <a class="header-title-center"  href="index.html">Zack Misso</a>
+        </div>
+
+        <!-- * old link based header -->
+        <!-- <div class="links">
+            <ul id="nav-ul">
+                <li class="header-title">
+                    <a class="header-title" href="index.html">Zack Misso</a>
+                </li>
+                <li class="header-item">
+                    <a href="index.html">Publications</a>
+                </li>
+                <li class="header-item">
+                    <a href="index.html">Projects</a>
+                </li>
+                <li class="header-item">
+                    <a href="index.html">Games</a>
+                </li>
+                <li class="header-item">
+                    <a href="index.html">Contact Me</a>
+                </li>
+            </ul>
+        </div> -->
+    </div>
+
+    <section id="intro" class="section-cl">
+        <h2 style="text-align: center; margin-bottom:-10px">Progressive null-tracking for volumetric rendering</h2>
+        <div class="links">
+            <p style="text-align: center; margin-bottom:-10px"><b>Zackary Misso</b>, <a href="https://www.yiningkarlli.com">Yining Karl Li</a>, <a href="https://www.linkedin.com/in/brent-burley-56972557/">Brent Burley</a>, <a href="https://www.linkedin.com/in/daniel-teece-2650358/">Daniel Teece</a>, <a href="https://cs.dartmouth.edu/~wjarosz/">Wojciech Jarosz</a></p>
+        </div>
+        <p style="text-align:center"><b><i>SIGGRAPH 2023</i></b></p>
+
+        <img src="publications/progressive_sig_2023/teaser.jpeg" class="teaser-img"></img>
+        <p>
+            Most existing unbiased null-scattering methods for heterogeneous participating media require knowledge of a maximum density (majorant) to perform well. Unfortunately, bounding majorants are difficult to guarantee in production, and existing methods like ratio tracking and weighted delta tracking (top, left) suffer from extreme variance if the “majorant” (𝜇 = 0.01) significantly underestimates the maximum density of the medium (𝜇 ≈ 3.0). Starting with the same poor estimate for a majorant (𝜇 = 0.01), we propose to instead clamp the medium density to the chosen majorant. This allows fast, low-variance rendering, but of a modified (biased) medium (top, center). We then show how to progressively update the majorant estimates (bottom row) to rapidly reduce this bias and ensure that the running average (top right) across multiple pixel samples converges to the correct result in the limit.
+        </p>
+        <h2 style="margin-bottom:-10px">Abstract</h2>
+        <hr class="abstract-line"/>
+        <p>Null-collision approaches for estimating transmittance and sampling free-flight distances are the current state-of-the-art for unbiased rendering of general heterogeneous participating media. However, null-collision approaches have a strict requirement for specifying a tightly bounding total extinction in order to remain both robust and performant; in practice this requirement restricts the use of null-collision techniques to only participating media where the density of the medium at every possible point in space is known a-priori. In production rendering, a common case is a medium in which density is defined by a black-box procedural function for which a bounding extinction cannot be determined beforehand. Typically in this case, a bounding extinction must be approximated by using an overly loose and therefore computationally inefficient conservative estimate. We present an analysis of how null-collision techniques degrade when a more aggressive initial guess for a bounding extinction underestimates the true maximum density and turns out to be non-bounding. We then build upon this analysis to arrive at two new techniques: first, a practical, efficient, consistent progressive algorithm that allows us to robustly adapt null-collision techniques for use with procedural media with unknown bounding extinctions, and second, a new importance sampling technique that improves ratio-tracking based on zero-variance sampling.</p>
+        <hr class="abstract-line" style="margin-bottom:0px"/>
+        <h2>Downloads and links</h2>
+        <!-- TODO: add fast forward link -->
+        <!-- TODO: maybe publish siggraph talk video -->
+        <div class="download-links">
+            <ul>
+                <li><a href="publications/progressive_sig_2023/misso23progressive.pdf">Paper</a></li>
+                <li><a href="publications/progressive_sig_2023/misso23progressive_supplemental.pdf">Supplemental Document</a></li>
+                <li><a href="publications/progressive_sig_2023/misso23progressive_poster.pdf">SIGGRAPH Poster</a></li>
+                <li><a href="https://github.com/ZackMisso/ProgressiveNullTracking_Siggraph2023">Code / Supplemental Data</a></li> <!-- TODO: correct code location -->
+                <li><a href="publications/progressive_sig_2023/citation.bib">Citation</a></li>
+                <li><a href="publications/progressive_sig_2023/misso23progressive_slides.key">Slides (Keynote, with notes)</a></li>
+                <li><a href="publications/progressive_sig_2023/misso23progressive_slides.pdf">Slides (PDF, without notes)</a></li>
+            </ul>
+        </div>
+
+    </section>
+
+</body>
+</html>
